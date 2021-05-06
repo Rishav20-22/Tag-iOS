@@ -1,0 +1,6 @@
+framework module Pods_Newapp24_Newapp24UITests {
+  umbrella header "Pods-Newapp24-Newapp24UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

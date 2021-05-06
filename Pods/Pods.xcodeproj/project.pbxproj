@@ -1,0 +1,1540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02E1759185E590B94D2114C78348C994 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62962EF82B382161C25280D47E202D53 /* SSLSecurity.swift */; };
+		0A54838656CD45DC7DBFCD30F79AD89D /* FrameUnsubAck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083A1D62CC9DDFC15821D7E757E8C0FD /* FrameUnsubAck.swift */; };
+		1552D5E55768AE688559E5B1316DCF3C /* Pods-Newapp24-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D17A82B95D4B00A615B2523C180D4B3 /* Pods-Newapp24-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19125FFED6290E5732C552A098C20D39 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A4CC686E6CC7F2CF33F9BE3FC0919E /* CFNetwork.framework */; };
+		1C7C608091334B29AA1F96D400B24326 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = CD018E11F80F9009A127A71197EC6C47 /* GCDAsyncSocket.m */; };
+		20B0B961DEF033ECE14FAE7152C70F4D /* CocoaMQTTStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE1BBAF1B6ADBA0D095DDD5529DDC /* CocoaMQTTStorage.swift */; };
+		28B980E0305E21A2039B23DB670BA4CD /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2A778F4A5DFC1792920CDDD618CFE4 /* CocoaAsyncSocket.framework */; };
+		2922C954DCA50DB1C087E9E9C9440393 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 278B5DC2E48384B3E3993E19C4003F5D /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D2C4E5717B6CA0F37B186D88E22CA2E /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B83CE5D26D5315E642E8EB8A41FE1 /* Frame.swift */; };
+		2DE3FB491314BC1085E94E3DDC121A1E /* FrameDisconnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C1564C9E42ADC029BB81FCFB061CE /* FrameDisconnect.swift */; };
+		2FF73F82E00253CB3CC8D71D62A3B595 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6825849B2CBA9BEAAF73B9BCA206926C /* Foundation.framework */; };
+		330A9DA7129F4DD44C6BDC6FA44A44C4 /* CocoaMQTTTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9C4F8C1A30E19D2E5FB86A31ECB05 /* CocoaMQTTTypes.swift */; };
+		37FC3740BE31B9BBE58D205D5B02A3B6 /* FramePubRec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A2E2DF94DBA3F06F02EE7E44F17CE9 /* FramePubRec.swift */; };
+		3AA93608A0A7FD532B0C26B87E211C9C /* FrameUnsubscribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E8B27A2ED23B650543310133405695 /* FrameUnsubscribe.swift */; };
+		3DA4BD4A19F197893727DEA3E37791D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6825849B2CBA9BEAAF73B9BCA206926C /* Foundation.framework */; };
+		411EE6BA92B228BF3497175C14FC7A90 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7522DC045A39DFF2D1F05C23F89C32 /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CD392FCA2B013125310301F6E97D9F /* FramePublish.swift in Sources */ = {isa = PBXBuildFile; fileRef = A809038019D20ECC75DB6DE891F334F8 /* FramePublish.swift */; };
+		501119DC0CF2877F95F7B9D75CA39F90 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D343A3CC2E338AA6A67583E5EC3ECA8 /* Security.framework */; };
+		531A0D0CB50A580D8BD9644DF915E77E /* CocoaMQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680B463E6E5A92D9CE02E60560C217AF /* CocoaMQTT.swift */; };
+		5A804B1BFE1A0C3E0A580F2C743BD0D8 /* FrameSubscribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF5A6F6832452875239368887DE2B49 /* FrameSubscribe.swift */; };
+		5E57566CBA4611154452B55800971EED /* CocoaMQTTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B7D59240EBFA1AA543BB8C74901B7C /* CocoaMQTTMessage.swift */; };
+		5FEB4D09E71B821568A9972C96FEA921 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE69C0BED9DC18615289D0C48617D1C /* Compression.swift */; };
+		62241357A48428738C4624E19FBA77D6 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B4CDF4F677243BB699657B8C58E3DD /* Starscream-dummy.m */; };
+		6FFB23DD5E8DD756D3A4AB53EEE4BA8E /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F42F569BE0A7F541E7C245316D40EBAF /* GCDAsyncUdpSocket.m */; };
+		7171DBC7AB13978CDDD928A3DF375B7B /* CocoaMQTTSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FAB781B15CED74C73D55323AFB0BC9 /* CocoaMQTTSocket.swift */; };
+		7192998B72BC2DA12A8F6E95C44B7F59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6825849B2CBA9BEAAF73B9BCA206926C /* Foundation.framework */; };
+		7BF0AE2D60A22D2956D6AC88A0018AB0 /* FrameSubAck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CEC910B8CF01A60ED43EF6395A3EBD /* FrameSubAck.swift */; };
+		7CA9CA7934EF3971211F237BA429C8E9 /* CocoaMQTTDeliver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914C72BC59F97A45CACC51A30F3F99E /* CocoaMQTTDeliver.swift */; };
+		88DABACB5D87C0F929F94693E75BADFC /* CocoaMQTTReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E7784BE0410FE6D79E6B9000116AB /* CocoaMQTTReader.swift */; };
+		8D744AAE79127CA10811E57EAD5EE53D /* Pods-Newapp24Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 935B15F79CF5D082041A7CBF13F9F03B /* Pods-Newapp24Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7592B82CBC76217E6D5088C68A28F1 /* CocoaMQTTTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260FCCE146C80ADF9C49530E3C1B9F05 /* CocoaMQTTTimer.swift */; };
+		A2F8222B6397B914145CD6AC5A348453 /* FramePubAck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC513A589E27ECF27B6EB58EA01D672 /* FramePubAck.swift */; };
+		AD13B442C4B1D006D505E3C2E7C20790 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6825849B2CBA9BEAAF73B9BCA206926C /* Foundation.framework */; };
+		AFB2C6454403547B14D5C1F2CE635EAF /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB4AC4F1E17B3167B694AFD20A70C878 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4344BD5C32E2C704D7ACEA4CA76A01F /* FramePingReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF09E40BF9637C92FEA22DEA4380C82 /* FramePingReq.swift */; };
+		B6FB8C454331CADD614DBE75148BA427 /* FrameConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77255C33B589FEF7B8A6218CD53A0A1 /* FrameConnect.swift */; };
+		BD144AD138283B3B48934DF2DB66A77E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6825849B2CBA9BEAAF73B9BCA206926C /* Foundation.framework */; };
+		C06490B61166FA18AF897440A99A0F73 /* FramePubRel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601144BFD198C9EE3FAF573AD7F52E7 /* FramePubRel.swift */; };
+		C0EFB116050EA5BC87BCA69750D115FE /* Pods-Newapp24-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B15374AD5290C723BBD908BC53984FB /* Pods-Newapp24-dummy.m */; };
+		C1826D4E8DB78C8EC9A1E37A4FFF5BD1 /* CocoaMQTT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BB5AC4988AA46A45B35868BB175A7AD /* CocoaMQTT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7B2767C16C9B5D70B71EA828F2EA50B /* FrameConnAck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C661481E8C4EAE275BC1E86DE6540 /* FrameConnAck.swift */; };
+		C9142261C216B26D38FAF846D4210429 /* Pods-Newapp24Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C34854A3A320299FB46325D2CEBEFFE3 /* Pods-Newapp24Tests-dummy.m */; };
+		D56A8AC821D4A5D9A99EAAE986E3B993 /* CocoaMQTTLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F522137268A654877961AED12C7FCD6 /* CocoaMQTTLogger.swift */; };
+		DDB4918B004B6258626103AC7C582FC7 /* Pods-Newapp24-Newapp24UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C93AAB9254515EE13968BBAE9FA708 /* Pods-Newapp24-Newapp24UITests-dummy.m */; };
+		DF77DA76BD5962EE7DD383126BBBBAC8 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A4A7A3B90F19E45948E1321F190634 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7B1F3F1CD53A85BE2199C9A62BC2848 /* FramePubComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033CBC04535F8F304659067137A11E2 /* FramePubComp.swift */; };
+		E8B842F5A25319CD3E278878E16DAEEB /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE67929E004C59C73AD918069C23D18 /* Starscream.framework */; };
+		EBA6334500BFBBE584FC2E34A929C3E7 /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B0ED06FC68307D3C4CBD558049EC6 /* SSLClientCertificate.swift */; };
+		EC39EE31278B4BB15FE906AFAA2194A4 /* CocoaMQTTWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B479C0C70B5318F8AA783B9EA22B9C4 /* CocoaMQTTWebSocket.swift */; };
+		ED396FD096A7A562AFF9A2A6CF83E40E /* Pods-Newapp24-Newapp24UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F12851C0312DCC45493964CEEE8665E1 /* Pods-Newapp24-Newapp24UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F109009C4A21C9E93847A1B1D3D0430F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6825849B2CBA9BEAAF73B9BCA206926C /* Foundation.framework */; };
+		F535F07B2C906E490D51F912465CD554 /* CocoaMQTT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA66166C91A23A25D3F26B649ED493F /* CocoaMQTT-dummy.m */; };
+		FBB70AF3F803450935EE98C837D98688 /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0419C57A175911512446C06CDD3404 /* CocoaAsyncSocket-dummy.m */; };
+		FBD044ED57384ACB8D6568250150A4FF /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DD04A7CCBF90734073E949546DD4A /* WebSocket.swift */; };
+		FBDA476EECF244C8A326D211F073C7E8 /* FramePingResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C63275829942C384FCA8B37C955BD /* FramePingResp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		541496DF040F10DCBAD7B476E4E3D513 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		564162AD312ADC3E50EEF06F2CA37FD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4EE798EB0CEF0DDC0A97761E7D826B8;
+			remoteInfo = "Pods-Newapp24";
+		};
+		6DD741AEE7D61AAFA86EC51921102B79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		830B2FACA33188D6EA6565C8208A7480 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		9277E484181A2EB0F349735DA1EFA173 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EB168A830EFA6136FA93357D1F1511A;
+			remoteInfo = CocoaMQTT;
+		};
+		B5331549D445492F924FD4B418DCB4E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		C21172BFBD6E7EB4B1F68CE353659BD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		ED0EAFFE7F38455EC998F9BFA2148B25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		F333CBE71E64D95323EA37213EBF6FAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EB168A830EFA6136FA93357D1F1511A;
+			remoteInfo = CocoaMQTT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08013F91A426D65190501C521D10B1F0 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		083A1D62CC9DDFC15821D7E757E8C0FD /* FrameUnsubAck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameUnsubAck.swift; path = Source/FrameUnsubAck.swift; sourceTree = "<group>"; };
+		0DF09E40BF9637C92FEA22DEA4380C82 /* FramePingReq.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FramePingReq.swift; path = Source/FramePingReq.swift; sourceTree = "<group>"; };
+		0EC513A589E27ECF27B6EB58EA01D672 /* FramePubAck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FramePubAck.swift; path = Source/FramePubAck.swift; sourceTree = "<group>"; };
+		1B15374AD5290C723BBD908BC53984FB /* Pods-Newapp24-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Newapp24-dummy.m"; sourceTree = "<group>"; };
+		2033CBC04535F8F304659067137A11E2 /* FramePubComp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FramePubComp.swift; path = Source/FramePubComp.swift; sourceTree = "<group>"; };
+		260FCCE146C80ADF9C49530E3C1B9F05 /* CocoaMQTTTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTTimer.swift; path = Source/CocoaMQTTTimer.swift; sourceTree = "<group>"; };
+		2639353BA5A9341CE6C4DA40DDAA50B1 /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		278B5DC2E48384B3E3993E19C4003F5D /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+		2BB5AC4988AA46A45B35868BB175A7AD /* CocoaMQTT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaMQTT-umbrella.h"; sourceTree = "<group>"; };
+		2F139D5F7573A9268903DFB82F2B1433 /* CocoaMQTT-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaMQTT-prefix.pch"; sourceTree = "<group>"; };
+		2F522137268A654877961AED12C7FCD6 /* CocoaMQTTLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTLogger.swift; path = Source/CocoaMQTTLogger.swift; sourceTree = "<group>"; };
+		33C93AAB9254515EE13968BBAE9FA708 /* Pods-Newapp24-Newapp24UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Newapp24-Newapp24UITests-dummy.m"; sourceTree = "<group>"; };
+		38B4CDF4F677243BB699657B8C58E3DD /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		3DE67929E004C59C73AD918069C23D18 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E6ACF651ABAED6FBAC0FCD91731800 /* Pods-Newapp24Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Newapp24Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4601144BFD198C9EE3FAF573AD7F52E7 /* FramePubRel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FramePubRel.swift; path = Source/FramePubRel.swift; sourceTree = "<group>"; };
+		4963A306B163B3F40E0F36685D0B0305 /* Pods-Newapp24-Newapp24UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Newapp24-Newapp24UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4998B335E8FB93490B4EC8C60A2C1ED2 /* Pods-Newapp24-Newapp24UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Newapp24-Newapp24UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4FA66166C91A23A25D3F26B649ED493F /* CocoaMQTT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaMQTT-dummy.m"; sourceTree = "<group>"; };
+		51E8BD0C9FED70515EC21A408C3121EB /* Pods-Newapp24Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Newapp24Tests.release.xcconfig"; sourceTree = "<group>"; };
+		52CEC910B8CF01A60ED43EF6395A3EBD /* FrameSubAck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameSubAck.swift; path = Source/FrameSubAck.swift; sourceTree = "<group>"; };
+		5574D4AB7F57EBF40CF185E608F30AD8 /* CocoaAsyncSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.release.xcconfig; sourceTree = "<group>"; };
+		55A086D31152FB849D2CEF923521D801 /* Pods-Newapp24-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Newapp24-acknowledgements.plist"; sourceTree = "<group>"; };
+		5BAD636757FD3E62CE736AFBB2450CE0 /* Pods-Newapp24.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Newapp24.debug.xcconfig"; sourceTree = "<group>"; };
+		5D343A3CC2E338AA6A67583E5EC3ECA8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		62962EF82B382161C25280D47E202D53 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/Starscream/SSLSecurity.swift; sourceTree = "<group>"; };
+		680B463E6E5A92D9CE02E60560C217AF /* CocoaMQTT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTT.swift; path = Source/CocoaMQTT.swift; sourceTree = "<group>"; };
+		68209BA9E228C9F9F13630F13595E969 /* Pods-Newapp24Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Newapp24Tests-Info.plist"; sourceTree = "<group>"; };
+		6825849B2CBA9BEAAF73B9BCA206926C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		697A1F6E80F8EB4E408BA64323CA1C52 /* Pods-Newapp24Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Newapp24Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DAB184BE8F86FFC5F8E04399F185AAC /* CocoaMQTT-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaMQTT-Info.plist"; sourceTree = "<group>"; };
+		70E64BAA4B537726A5D5E42F7379AE12 /* Pods-Newapp24Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Newapp24Tests.modulemap"; sourceTree = "<group>"; };
+		747A45F1D120251DBDED0E32EBD9558F /* Pods-Newapp24-Newapp24UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Newapp24-Newapp24UITests.modulemap"; sourceTree = "<group>"; };
+		7AF5A6F6832452875239368887DE2B49 /* FrameSubscribe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameSubscribe.swift; path = Source/FrameSubscribe.swift; sourceTree = "<group>"; };
+		7D17A82B95D4B00A615B2523C180D4B3 /* Pods-Newapp24-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Newapp24-umbrella.h"; sourceTree = "<group>"; };
+		82C627D2828E4287B0180B215E320D35 /* Pods-Newapp24-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Newapp24-frameworks.sh"; sourceTree = "<group>"; };
+		856EE1BBAF1B6ADBA0D095DDD5529DDC /* CocoaMQTTStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTStorage.swift; path = Source/CocoaMQTTStorage.swift; sourceTree = "<group>"; };
+		85E8B27A2ED23B650543310133405695 /* FrameUnsubscribe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameUnsubscribe.swift; path = Source/FrameUnsubscribe.swift; sourceTree = "<group>"; };
+		8792CE6F2870398608D4B9B6F3838B50 /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
+		8914C72BC59F97A45CACC51A30F3F99E /* CocoaMQTTDeliver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTDeliver.swift; path = Source/CocoaMQTTDeliver.swift; sourceTree = "<group>"; };
+		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		897B83CE5D26D5315E642E8EB8A41FE1 /* Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Frame.swift; path = Source/Frame.swift; sourceTree = "<group>"; };
+		8F2A778F4A5DFC1792920CDDD618CFE4 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D163ADD39EFC6FEC0643E8B5C34492 /* Pods-Newapp24Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Newapp24Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		935B15F79CF5D082041A7CBF13F9F03B /* Pods-Newapp24Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Newapp24Tests-umbrella.h"; sourceTree = "<group>"; };
+		9929C8F67CC87078438E65818A3F484E /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
+		99B7D59240EBFA1AA543BB8C74901B7C /* CocoaMQTTMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTMessage.swift; path = Source/CocoaMQTTMessage.swift; sourceTree = "<group>"; };
+		9A7C661481E8C4EAE275BC1E86DE6540 /* FrameConnAck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameConnAck.swift; path = Source/FrameConnAck.swift; sourceTree = "<group>"; };
+		9B479C0C70B5318F8AA783B9EA22B9C4 /* CocoaMQTTWebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTWebSocket.swift; path = Source/CocoaMQTTWebSocket.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A35B0ED06FC68307D3C4CBD558049EC6 /* SSLClientCertificate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLClientCertificate.swift; path = Sources/Starscream/SSLClientCertificate.swift; sourceTree = "<group>"; };
+		A3C2D12020D8B0C4377DA42028024331 /* Pods_Newapp24Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Newapp24Tests.framework; path = "Pods-Newapp24Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A426D18DAB3303FDF5CEB4E7BAAE7697 /* Pods-Newapp24-Newapp24UITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Newapp24-Newapp24UITests-frameworks.sh"; sourceTree = "<group>"; };
+		A59F7B764D9D8610DCBB7FDE35918192 /* CocoaMQTT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaMQTT.modulemap; sourceTree = "<group>"; };
+		A6862CD26C6527966DB9E45488E0DC8C /* Pods-Newapp24-Newapp24UITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Newapp24-Newapp24UITests-Info.plist"; sourceTree = "<group>"; };
+		A809038019D20ECC75DB6DE891F334F8 /* FramePublish.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FramePublish.swift; path = Source/FramePublish.swift; sourceTree = "<group>"; };
+		A8453775E9696ADCDE580ADEA0E9E33E /* CocoaAsyncSocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaAsyncSocket-Info.plist"; sourceTree = "<group>"; };
+		AA0419C57A175911512446C06CDD3404 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		AA7522DC045A39DFF2D1F05C23F89C32 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		AB4AC4F1E17B3167B694AFD20A70C878 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		AB6C1564C9E42ADC029BB81FCFB061CE /* FrameDisconnect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameDisconnect.swift; path = Source/FrameDisconnect.swift; sourceTree = "<group>"; };
+		B55E7784BE0410FE6D79E6B9000116AB /* CocoaMQTTReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTReader.swift; path = Source/CocoaMQTTReader.swift; sourceTree = "<group>"; };
+		B59C63275829942C384FCA8B37C955BD /* FramePingResp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FramePingResp.swift; path = Source/FramePingResp.swift; sourceTree = "<group>"; };
+		B9A4A7A3B90F19E45948E1321F190634 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		B9D89EAB0C7EB595A40045E7947986B3 /* Pods-Newapp24.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Newapp24.modulemap"; sourceTree = "<group>"; };
+		BBF27812CD1A9253B44BC0A4F8762B4D /* Pods-Newapp24-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Newapp24-Info.plist"; sourceTree = "<group>"; };
+		BC1BEFF3230EDCCF4018B98516AF29FB /* Pods-Newapp24.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Newapp24.release.xcconfig"; sourceTree = "<group>"; };
+		BFB3B70ECAEC869C66169896BD1373A2 /* Pods_Newapp24.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Newapp24.framework; path = "Pods-Newapp24.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2E9C4F8C1A30E19D2E5FB86A31ECB05 /* CocoaMQTTTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTTypes.swift; path = Source/CocoaMQTTTypes.swift; sourceTree = "<group>"; };
+		C34854A3A320299FB46325D2CEBEFFE3 /* Pods-Newapp24Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Newapp24Tests-dummy.m"; sourceTree = "<group>"; };
+		CD018E11F80F9009A127A71197EC6C47 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		D03DD04A7CCBF90734073E949546DD4A /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
+		D3389A4D2825EDF8DCA6B58C7539B05C /* Pods-Newapp24-Newapp24UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Newapp24-Newapp24UITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D3B1C82A6BE96C36C4E4BACEE0505681 /* CocoaMQTT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaMQTT.release.xcconfig; sourceTree = "<group>"; };
+		DA25FC80A4545072ADAFA9141554D371 /* Pods-Newapp24-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Newapp24-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DBAE79BA933A256CA4BE4C96F75C85FC /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		E1FAB781B15CED74C73D55323AFB0BC9 /* CocoaMQTTSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTSocket.swift; path = Source/CocoaMQTTSocket.swift; sourceTree = "<group>"; };
+		E2867C0F1AF9FE54F5050750FC7664E0 /* Pods_Newapp24_Newapp24UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Newapp24_Newapp24UITests.framework; path = "Pods-Newapp24-Newapp24UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6A4E1627379D6540B81A470C575D716 /* CocoaMQTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaMQTT.framework; path = CocoaMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E77255C33B589FEF7B8A6218CD53A0A1 /* FrameConnect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameConnect.swift; path = Source/FrameConnect.swift; sourceTree = "<group>"; };
+		E7A4CC686E6CC7F2CF33F9BE3FC0919E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		EC6C55B2BAD34215044E7E73B99849FE /* CocoaAsyncSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.debug.xcconfig; sourceTree = "<group>"; };
+		ED83F28EC7A1D7FCB8606EE619A99366 /* Pods-Newapp24-Newapp24UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Newapp24-Newapp24UITests.release.xcconfig"; sourceTree = "<group>"; };
+		F12851C0312DCC45493964CEEE8665E1 /* Pods-Newapp24-Newapp24UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Newapp24-Newapp24UITests-umbrella.h"; sourceTree = "<group>"; };
+		F42F569BE0A7F541E7C245316D40EBAF /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		F7A2E2DF94DBA3F06F02EE7E44F17CE9 /* FramePubRec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FramePubRec.swift; path = Source/FramePubRec.swift; sourceTree = "<group>"; };
+		FA5B475DAE739ABF32F887D9E226D2D9 /* CocoaMQTT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaMQTT.debug.xcconfig; sourceTree = "<group>"; };
+		FAA106954C95AC3D4960DB9748F13226 /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
+		FBE69C0BED9DC18615289D0C48617D1C /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Starscream/Compression.swift; sourceTree = "<group>"; };
+		FF1B73FAFB465D3E622B56CDF952CB24 /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		160EF26C734A27A9436CAB7143AF8F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19125FFED6290E5732C552A098C20D39 /* CFNetwork.framework in Frameworks */,
+				BD144AD138283B3B48934DF2DB66A77E /* Foundation.framework in Frameworks */,
+				501119DC0CF2877F95F7B9D75CA39F90 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24A5391A0269057393BC92B582EA3385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD13B442C4B1D006D505E3C2E7C20790 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E435B443710D861BBF54D0991114873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF73F82E00253CB3CC8D71D62A3B595 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87B8BBA4099DB7E0D81CB854CBBA7ED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B980E0305E21A2039B23DB670BA4CD /* CocoaAsyncSocket.framework in Frameworks */,
+				F109009C4A21C9E93847A1B1D3D0430F /* Foundation.framework in Frameworks */,
+				E8B842F5A25319CD3E278878E16DAEEB /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0D534F3D86DAC62D1332E1DAD912DBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DA4BD4A19F197893727DEA3E37791D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A66B80DC98243C9796F5C8745BA01A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7192998B72BC2DA12A8F6E95C44B7F59 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2919BA29F8730A010554A14E71B35673 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				08013F91A426D65190501C521D10B1F0 /* Starscream.modulemap */,
+				38B4CDF4F677243BB699657B8C58E3DD /* Starscream-dummy.m */,
+				9929C8F67CC87078438E65818A3F484E /* Starscream-Info.plist */,
+				DBAE79BA933A256CA4BE4C96F75C85FC /* Starscream-prefix.pch */,
+				AB4AC4F1E17B3167B694AFD20A70C878 /* Starscream-umbrella.h */,
+				FAA106954C95AC3D4960DB9748F13226 /* Starscream.debug.xcconfig */,
+				8792CE6F2870398608D4B9B6F3838B50 /* Starscream.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		2CF358BFF454B7EAD60907C818329999 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A59F7B764D9D8610DCBB7FDE35918192 /* CocoaMQTT.modulemap */,
+				4FA66166C91A23A25D3F26B649ED493F /* CocoaMQTT-dummy.m */,
+				6DAB184BE8F86FFC5F8E04399F185AAC /* CocoaMQTT-Info.plist */,
+				2F139D5F7573A9268903DFB82F2B1433 /* CocoaMQTT-prefix.pch */,
+				2BB5AC4988AA46A45B35868BB175A7AD /* CocoaMQTT-umbrella.h */,
+				FA5B475DAE739ABF32F887D9E226D2D9 /* CocoaMQTT.debug.xcconfig */,
+				D3B1C82A6BE96C36C4E4BACEE0505681 /* CocoaMQTT.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaMQTT";
+			sourceTree = "<group>";
+		};
+		32D4CD122916E45AE01D415E89222012 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA79B3B0F668EB604FA892FE77D307DC /* CocoaAsyncSocket */,
+				FE1C9852E7F09AAFC89F6CEB6D3446FB /* CocoaMQTT */,
+				B88B20D1C7F987C970D007FF77FDE569 /* Starscream */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		58133A810B3831444F04C1F89D5A4009 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E7A4CC686E6CC7F2CF33F9BE3FC0919E /* CFNetwork.framework */,
+				6825849B2CBA9BEAAF73B9BCA206926C /* Foundation.framework */,
+				5D343A3CC2E338AA6A67583E5EC3ECA8 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6CE9A6DA241C886FD33E21F6AD6AF986 /* Pods-Newapp24-Newapp24UITests */ = {
+			isa = PBXGroup;
+			children = (
+				747A45F1D120251DBDED0E32EBD9558F /* Pods-Newapp24-Newapp24UITests.modulemap */,
+				4998B335E8FB93490B4EC8C60A2C1ED2 /* Pods-Newapp24-Newapp24UITests-acknowledgements.markdown */,
+				D3389A4D2825EDF8DCA6B58C7539B05C /* Pods-Newapp24-Newapp24UITests-acknowledgements.plist */,
+				33C93AAB9254515EE13968BBAE9FA708 /* Pods-Newapp24-Newapp24UITests-dummy.m */,
+				A426D18DAB3303FDF5CEB4E7BAAE7697 /* Pods-Newapp24-Newapp24UITests-frameworks.sh */,
+				A6862CD26C6527966DB9E45488E0DC8C /* Pods-Newapp24-Newapp24UITests-Info.plist */,
+				F12851C0312DCC45493964CEEE8665E1 /* Pods-Newapp24-Newapp24UITests-umbrella.h */,
+				4963A306B163B3F40E0F36685D0B0305 /* Pods-Newapp24-Newapp24UITests.debug.xcconfig */,
+				ED83F28EC7A1D7FCB8606EE619A99366 /* Pods-Newapp24-Newapp24UITests.release.xcconfig */,
+			);
+			name = "Pods-Newapp24-Newapp24UITests";
+			path = "Target Support Files/Pods-Newapp24-Newapp24UITests";
+			sourceTree = "<group>";
+		};
+		722E0AAEB862B4233712FF5550334D9F /* WebSockets */ = {
+			isa = PBXGroup;
+			children = (
+				9B479C0C70B5318F8AA783B9EA22B9C4 /* CocoaMQTTWebSocket.swift */,
+			);
+			name = WebSockets;
+			sourceTree = "<group>";
+		};
+		77EEE2A94726726C1ECB821AAD5BE5F6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D7639072A1A916B96FE827C4C4DF562 /* Pods-Newapp24 */,
+				6CE9A6DA241C886FD33E21F6AD6AF986 /* Pods-Newapp24-Newapp24UITests */,
+				FE295CB4F71B869B03EDA6E84E1BB8D2 /* Pods-Newapp24Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7D7639072A1A916B96FE827C4C4DF562 /* Pods-Newapp24 */ = {
+			isa = PBXGroup;
+			children = (
+				B9D89EAB0C7EB595A40045E7947986B3 /* Pods-Newapp24.modulemap */,
+				DA25FC80A4545072ADAFA9141554D371 /* Pods-Newapp24-acknowledgements.markdown */,
+				55A086D31152FB849D2CEF923521D801 /* Pods-Newapp24-acknowledgements.plist */,
+				1B15374AD5290C723BBD908BC53984FB /* Pods-Newapp24-dummy.m */,
+				82C627D2828E4287B0180B215E320D35 /* Pods-Newapp24-frameworks.sh */,
+				BBF27812CD1A9253B44BC0A4F8762B4D /* Pods-Newapp24-Info.plist */,
+				7D17A82B95D4B00A615B2523C180D4B3 /* Pods-Newapp24-umbrella.h */,
+				5BAD636757FD3E62CE736AFBB2450CE0 /* Pods-Newapp24.debug.xcconfig */,
+				BC1BEFF3230EDCCF4018B98516AF29FB /* Pods-Newapp24.release.xcconfig */,
+			);
+			name = "Pods-Newapp24";
+			path = "Target Support Files/Pods-Newapp24";
+			sourceTree = "<group>";
+		};
+		A6A67822DB10D01787C118777A5B1C18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */,
+				E6A4E1627379D6540B81A470C575D716 /* CocoaMQTT.framework */,
+				BFB3B70ECAEC869C66169896BD1373A2 /* Pods_Newapp24.framework */,
+				E2867C0F1AF9FE54F5050750FC7664E0 /* Pods_Newapp24_Newapp24UITests.framework */,
+				A3C2D12020D8B0C4377DA42028024331 /* Pods_Newapp24Tests.framework */,
+				891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B02968A55415E23C128A138492965A57 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2639353BA5A9341CE6C4DA40DDAA50B1 /* CocoaAsyncSocket.modulemap */,
+				AA0419C57A175911512446C06CDD3404 /* CocoaAsyncSocket-dummy.m */,
+				A8453775E9696ADCDE580ADEA0E9E33E /* CocoaAsyncSocket-Info.plist */,
+				FF1B73FAFB465D3E622B56CDF952CB24 /* CocoaAsyncSocket-prefix.pch */,
+				278B5DC2E48384B3E3993E19C4003F5D /* CocoaAsyncSocket-umbrella.h */,
+				EC6C55B2BAD34215044E7E73B99849FE /* CocoaAsyncSocket.debug.xcconfig */,
+				5574D4AB7F57EBF40CF185E608F30AD8 /* CocoaAsyncSocket.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
+			sourceTree = "<group>";
+		};
+		B88B20D1C7F987C970D007FF77FDE569 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				FBE69C0BED9DC18615289D0C48617D1C /* Compression.swift */,
+				A35B0ED06FC68307D3C4CBD558049EC6 /* SSLClientCertificate.swift */,
+				62962EF82B382161C25280D47E202D53 /* SSLSecurity.swift */,
+				D03DD04A7CCBF90734073E949546DD4A /* WebSocket.swift */,
+				2919BA29F8730A010554A14E71B35673 /* Support Files */,
+			);
+			name = Starscream;
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		BA721A1DBA87F4EF3986A0CB239BD994 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F2A778F4A5DFC1792920CDDD618CFE4 /* CocoaAsyncSocket.framework */,
+				3DE67929E004C59C73AD918069C23D18 /* Starscream.framework */,
+				58133A810B3831444F04C1F89D5A4009 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA79B3B0F668EB604FA892FE77D307DC /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				B9A4A7A3B90F19E45948E1321F190634 /* GCDAsyncSocket.h */,
+				CD018E11F80F9009A127A71197EC6C47 /* GCDAsyncSocket.m */,
+				AA7522DC045A39DFF2D1F05C23F89C32 /* GCDAsyncUdpSocket.h */,
+				F42F569BE0A7F541E7C245316D40EBAF /* GCDAsyncUdpSocket.m */,
+				B02968A55415E23C128A138492965A57 /* Support Files */,
+			);
+			name = CocoaAsyncSocket;
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BA721A1DBA87F4EF3986A0CB239BD994 /* Frameworks */,
+				32D4CD122916E45AE01D415E89222012 /* Pods */,
+				A6A67822DB10D01787C118777A5B1C18 /* Products */,
+				77EEE2A94726726C1ECB821AAD5BE5F6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		FD6025F2ED1CC7A58C7620060C7AB2D0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				680B463E6E5A92D9CE02E60560C217AF /* CocoaMQTT.swift */,
+				8914C72BC59F97A45CACC51A30F3F99E /* CocoaMQTTDeliver.swift */,
+				2F522137268A654877961AED12C7FCD6 /* CocoaMQTTLogger.swift */,
+				99B7D59240EBFA1AA543BB8C74901B7C /* CocoaMQTTMessage.swift */,
+				B55E7784BE0410FE6D79E6B9000116AB /* CocoaMQTTReader.swift */,
+				E1FAB781B15CED74C73D55323AFB0BC9 /* CocoaMQTTSocket.swift */,
+				856EE1BBAF1B6ADBA0D095DDD5529DDC /* CocoaMQTTStorage.swift */,
+				260FCCE146C80ADF9C49530E3C1B9F05 /* CocoaMQTTTimer.swift */,
+				C2E9C4F8C1A30E19D2E5FB86A31ECB05 /* CocoaMQTTTypes.swift */,
+				897B83CE5D26D5315E642E8EB8A41FE1 /* Frame.swift */,
+				9A7C661481E8C4EAE275BC1E86DE6540 /* FrameConnAck.swift */,
+				E77255C33B589FEF7B8A6218CD53A0A1 /* FrameConnect.swift */,
+				AB6C1564C9E42ADC029BB81FCFB061CE /* FrameDisconnect.swift */,
+				0DF09E40BF9637C92FEA22DEA4380C82 /* FramePingReq.swift */,
+				B59C63275829942C384FCA8B37C955BD /* FramePingResp.swift */,
+				0EC513A589E27ECF27B6EB58EA01D672 /* FramePubAck.swift */,
+				2033CBC04535F8F304659067137A11E2 /* FramePubComp.swift */,
+				A809038019D20ECC75DB6DE891F334F8 /* FramePublish.swift */,
+				F7A2E2DF94DBA3F06F02EE7E44F17CE9 /* FramePubRec.swift */,
+				4601144BFD198C9EE3FAF573AD7F52E7 /* FramePubRel.swift */,
+				52CEC910B8CF01A60ED43EF6395A3EBD /* FrameSubAck.swift */,
+				7AF5A6F6832452875239368887DE2B49 /* FrameSubscribe.swift */,
+				083A1D62CC9DDFC15821D7E757E8C0FD /* FrameUnsubAck.swift */,
+				85E8B27A2ED23B650543310133405695 /* FrameUnsubscribe.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		FE1C9852E7F09AAFC89F6CEB6D3446FB /* CocoaMQTT */ = {
+			isa = PBXGroup;
+			children = (
+				FD6025F2ED1CC7A58C7620060C7AB2D0 /* Core */,
+				2CF358BFF454B7EAD60907C818329999 /* Support Files */,
+				722E0AAEB862B4233712FF5550334D9F /* WebSockets */,
+			);
+			name = CocoaMQTT;
+			path = CocoaMQTT;
+			sourceTree = "<group>";
+		};
+		FE295CB4F71B869B03EDA6E84E1BB8D2 /* Pods-Newapp24Tests */ = {
+			isa = PBXGroup;
+			children = (
+				70E64BAA4B537726A5D5E42F7379AE12 /* Pods-Newapp24Tests.modulemap */,
+				697A1F6E80F8EB4E408BA64323CA1C52 /* Pods-Newapp24Tests-acknowledgements.markdown */,
+				90D163ADD39EFC6FEC0643E8B5C34492 /* Pods-Newapp24Tests-acknowledgements.plist */,
+				C34854A3A320299FB46325D2CEBEFFE3 /* Pods-Newapp24Tests-dummy.m */,
+				68209BA9E228C9F9F13630F13595E969 /* Pods-Newapp24Tests-Info.plist */,
+				935B15F79CF5D082041A7CBF13F9F03B /* Pods-Newapp24Tests-umbrella.h */,
+				41E6ACF651ABAED6FBAC0FCD91731800 /* Pods-Newapp24Tests.debug.xcconfig */,
+				51E8BD0C9FED70515EC21A408C3121EB /* Pods-Newapp24Tests.release.xcconfig */,
+			);
+			name = "Pods-Newapp24Tests";
+			path = "Target Support Files/Pods-Newapp24Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2D0E9CF570D7E9C787EE3E702BD72C59 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D744AAE79127CA10811E57EAD5EE53D /* Pods-Newapp24Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332F59357BED3010C478A891C93E6FE7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED396FD096A7A562AFF9A2A6CF83E40E /* Pods-Newapp24-Newapp24UITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA6FF40B421F8189B18A46284ADAF30 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1552D5E55768AE688559E5B1316DCF3C /* Pods-Newapp24-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D239BAAAA34B09CBCC500B24395DA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFB2C6454403547B14D5C1F2CE635EAF /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F69A79C95FAF2BF55D206052E8ADEC2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1826D4E8DB78C8EC9A1E37A4FFF5BD1 /* CocoaMQTT-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82807D639FCFDF56A607D3970098A87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2922C954DCA50DB1C087E9E9C9440393 /* CocoaAsyncSocket-umbrella.h in Headers */,
+				DF77DA76BD5962EE7DD383126BBBBAC8 /* GCDAsyncSocket.h in Headers */,
+				411EE6BA92B228BF3497175C14FC7A90 /* GCDAsyncUdpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4EB168A830EFA6136FA93357D1F1511A /* CocoaMQTT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E6FE13E3BAA6ADBD084E39BD4C8BAC8 /* Build configuration list for PBXNativeTarget "CocoaMQTT" */;
+			buildPhases = (
+				F69A79C95FAF2BF55D206052E8ADEC2C /* Headers */,
+				EA5C1973619AE0110FACEEC4AA1ABDE0 /* Sources */,
+				87B8BBA4099DB7E0D81CB854CBBA7ED8 /* Frameworks */,
+				24A1EAFE12F5030B44E5377075634B2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBA0278EF12110BD62F970258B5836F2 /* PBXTargetDependency */,
+				6C105F0CC6D6C9C6AB6AC7247CA2C017 /* PBXTargetDependency */,
+			);
+			name = CocoaMQTT;
+			productName = CocoaMQTT;
+			productReference = E6A4E1627379D6540B81A470C575D716 /* CocoaMQTT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4F285E83B549EC06D27712544E25D95C /* Pods-Newapp24-Newapp24UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 707227B97B7A8593900F961D7F58E72F /* Build configuration list for PBXNativeTarget "Pods-Newapp24-Newapp24UITests" */;
+			buildPhases = (
+				332F59357BED3010C478A891C93E6FE7 /* Headers */,
+				080BD8C4883F47B04B844834675EADDF /* Sources */,
+				3E435B443710D861BBF54D0991114873 /* Frameworks */,
+				8BF2EC9D2CFD408F69934AB8BE6F4351 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D46D6A510AC730B0B3961BC869A0EBE /* PBXTargetDependency */,
+				D798276D080BC0425337FCD95063BD9C /* PBXTargetDependency */,
+				70BF13DC61AC1B636C84A8E1DE598548 /* PBXTargetDependency */,
+			);
+			name = "Pods-Newapp24-Newapp24UITests";
+			productName = "Pods-Newapp24-Newapp24UITests";
+			productReference = E2867C0F1AF9FE54F5050750FC7664E0 /* Pods_Newapp24_Newapp24UITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65B2BBD8991DD61ACE6737AADB85AB43 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
+			buildPhases = (
+				F82807D639FCFDF56A607D3970098A87 /* Headers */,
+				4920E2F47EC0874D094992B0DD2CA9E7 /* Sources */,
+				160EF26C734A27A9436CAB7143AF8F15 /* Frameworks */,
+				B7B5EDC45A81FF70431CFBFB2ABDFFEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaAsyncSocket;
+			productName = CocoaAsyncSocket;
+			productReference = 6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF8E1A559D60C8443312D8067778442 /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				B8D239BAAAA34B09CBCC500B24395DA1 /* Headers */,
+				F40299FD707094F23874DB9C77A3F1AF /* Sources */,
+				A0D534F3D86DAC62D1332E1DAD912DBB /* Frameworks */,
+				8DF914538FD814D4FA3654FFDC21B163 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AB9E055F88A2C20B09BB1C006647E3DD /* Pods-Newapp24Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F345272332AC51FDD2C7ADE0C709D215 /* Build configuration list for PBXNativeTarget "Pods-Newapp24Tests" */;
+			buildPhases = (
+				2D0E9CF570D7E9C787EE3E702BD72C59 /* Headers */,
+				2F7976492BC58215EBA5C4E1D0C06EC1 /* Sources */,
+				24A5391A0269057393BC92B582EA3385 /* Frameworks */,
+				778A8DD87120ABB8673FC1B8ED23482F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBAFBD5034C5101A6CAC813E46AC7BCE /* PBXTargetDependency */,
+			);
+			name = "Pods-Newapp24Tests";
+			productName = "Pods-Newapp24Tests";
+			productReference = A3C2D12020D8B0C4377DA42028024331 /* Pods_Newapp24Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B4EE798EB0CEF0DDC0A97761E7D826B8 /* Pods-Newapp24 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E6683B27AEB87792C201E16F8CABD22 /* Build configuration list for PBXNativeTarget "Pods-Newapp24" */;
+			buildPhases = (
+				9BA6FF40B421F8189B18A46284ADAF30 /* Headers */,
+				2B43D52ED0BD04A7EA999FEDD4838C11 /* Sources */,
+				F5A66B80DC98243C9796F5C8745BA01A /* Frameworks */,
+				D5E902FF31F7A4C1A821FED4961BC152 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C24C7482CA98BAF0058B288F58055B1C /* PBXTargetDependency */,
+				16528FAE59DAC1997F2F220EF66026F3 /* PBXTargetDependency */,
+				553F857041EC7B0CD4B346B7CAC9530B /* PBXTargetDependency */,
+			);
+			name = "Pods-Newapp24";
+			productName = "Pods-Newapp24";
+			productReference = BFB3B70ECAEC869C66169896BD1373A2 /* Pods_Newapp24.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A6A67822DB10D01787C118777A5B1C18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */,
+				4EB168A830EFA6136FA93357D1F1511A /* CocoaMQTT */,
+				B4EE798EB0CEF0DDC0A97761E7D826B8 /* Pods-Newapp24 */,
+				4F285E83B549EC06D27712544E25D95C /* Pods-Newapp24-Newapp24UITests */,
+				AB9E055F88A2C20B09BB1C006647E3DD /* Pods-Newapp24Tests */,
+				9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24A1EAFE12F5030B44E5377075634B2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		778A8DD87120ABB8673FC1B8ED23482F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BF2EC9D2CFD408F69934AB8BE6F4351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DF914538FD814D4FA3654FFDC21B163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B5EDC45A81FF70431CFBFB2ABDFFEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E902FF31F7A4C1A821FED4961BC152 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		080BD8C4883F47B04B844834675EADDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB4918B004B6258626103AC7C582FC7 /* Pods-Newapp24-Newapp24UITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B43D52ED0BD04A7EA999FEDD4838C11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0EFB116050EA5BC87BCA69750D115FE /* Pods-Newapp24-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7976492BC58215EBA5C4E1D0C06EC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9142261C216B26D38FAF846D4210429 /* Pods-Newapp24Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4920E2F47EC0874D094992B0DD2CA9E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB70AF3F803450935EE98C837D98688 /* CocoaAsyncSocket-dummy.m in Sources */,
+				1C7C608091334B29AA1F96D400B24326 /* GCDAsyncSocket.m in Sources */,
+				6FFB23DD5E8DD756D3A4AB53EEE4BA8E /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5C1973619AE0110FACEEC4AA1ABDE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F535F07B2C906E490D51F912465CD554 /* CocoaMQTT-dummy.m in Sources */,
+				531A0D0CB50A580D8BD9644DF915E77E /* CocoaMQTT.swift in Sources */,
+				7CA9CA7934EF3971211F237BA429C8E9 /* CocoaMQTTDeliver.swift in Sources */,
+				D56A8AC821D4A5D9A99EAAE986E3B993 /* CocoaMQTTLogger.swift in Sources */,
+				5E57566CBA4611154452B55800971EED /* CocoaMQTTMessage.swift in Sources */,
+				88DABACB5D87C0F929F94693E75BADFC /* CocoaMQTTReader.swift in Sources */,
+				7171DBC7AB13978CDDD928A3DF375B7B /* CocoaMQTTSocket.swift in Sources */,
+				20B0B961DEF033ECE14FAE7152C70F4D /* CocoaMQTTStorage.swift in Sources */,
+				8F7592B82CBC76217E6D5088C68A28F1 /* CocoaMQTTTimer.swift in Sources */,
+				330A9DA7129F4DD44C6BDC6FA44A44C4 /* CocoaMQTTTypes.swift in Sources */,
+				EC39EE31278B4BB15FE906AFAA2194A4 /* CocoaMQTTWebSocket.swift in Sources */,
+				2D2C4E5717B6CA0F37B186D88E22CA2E /* Frame.swift in Sources */,
+				C7B2767C16C9B5D70B71EA828F2EA50B /* FrameConnAck.swift in Sources */,
+				B6FB8C454331CADD614DBE75148BA427 /* FrameConnect.swift in Sources */,
+				2DE3FB491314BC1085E94E3DDC121A1E /* FrameDisconnect.swift in Sources */,
+				B4344BD5C32E2C704D7ACEA4CA76A01F /* FramePingReq.swift in Sources */,
+				FBDA476EECF244C8A326D211F073C7E8 /* FramePingResp.swift in Sources */,
+				A2F8222B6397B914145CD6AC5A348453 /* FramePubAck.swift in Sources */,
+				E7B1F3F1CD53A85BE2199C9A62BC2848 /* FramePubComp.swift in Sources */,
+				46CD392FCA2B013125310301F6E97D9F /* FramePublish.swift in Sources */,
+				37FC3740BE31B9BBE58D205D5B02A3B6 /* FramePubRec.swift in Sources */,
+				C06490B61166FA18AF897440A99A0F73 /* FramePubRel.swift in Sources */,
+				7BF0AE2D60A22D2956D6AC88A0018AB0 /* FrameSubAck.swift in Sources */,
+				5A804B1BFE1A0C3E0A580F2C743BD0D8 /* FrameSubscribe.swift in Sources */,
+				0A54838656CD45DC7DBFCD30F79AD89D /* FrameUnsubAck.swift in Sources */,
+				3AA93608A0A7FD532B0C26B87E211C9C /* FrameUnsubscribe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F40299FD707094F23874DB9C77A3F1AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FEB4D09E71B821568A9972C96FEA921 /* Compression.swift in Sources */,
+				EBA6334500BFBBE584FC2E34A929C3E7 /* SSLClientCertificate.swift in Sources */,
+				02E1759185E590B94D2114C78348C994 /* SSLSecurity.swift in Sources */,
+				62241357A48428738C4624E19FBA77D6 /* Starscream-dummy.m in Sources */,
+				FBD044ED57384ACB8D6568250150A4FF /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D46D6A510AC730B0B3961BC869A0EBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = B5331549D445492F924FD4B418DCB4E5 /* PBXContainerItemProxy */;
+		};
+		16528FAE59DAC1997F2F220EF66026F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaMQTT;
+			target = 4EB168A830EFA6136FA93357D1F1511A /* CocoaMQTT */;
+			targetProxy = 9277E484181A2EB0F349735DA1EFA173 /* PBXContainerItemProxy */;
+		};
+		553F857041EC7B0CD4B346B7CAC9530B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = 541496DF040F10DCBAD7B476E4E3D513 /* PBXContainerItemProxy */;
+		};
+		6C105F0CC6D6C9C6AB6AC7247CA2C017 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = 6DD741AEE7D61AAFA86EC51921102B79 /* PBXContainerItemProxy */;
+		};
+		70BF13DC61AC1B636C84A8E1DE598548 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = 830B2FACA33188D6EA6565C8208A7480 /* PBXContainerItemProxy */;
+		};
+		C24C7482CA98BAF0058B288F58055B1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = C21172BFBD6E7EB4B1F68CE353659BD7 /* PBXContainerItemProxy */;
+		};
+		D798276D080BC0425337FCD95063BD9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaMQTT;
+			target = 4EB168A830EFA6136FA93357D1F1511A /* CocoaMQTT */;
+			targetProxy = F333CBE71E64D95323EA37213EBF6FAA /* PBXContainerItemProxy */;
+		};
+		DBA0278EF12110BD62F970258B5836F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = ED0EAFFE7F38455EC998F9BFA2148B25 /* PBXContainerItemProxy */;
+		};
+		EBAFBD5034C5101A6CAC813E46AC7BCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Newapp24";
+			target = B4EE798EB0CEF0DDC0A97761E7D826B8 /* Pods-Newapp24 */;
+			targetProxy = 564162AD312ADC3E50EEF06F2CA37FD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1CF32F31BF693D625D713BC4994DE2E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5574D4AB7F57EBF40CF185E608F30AD8 /* CocoaAsyncSocket.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2CDFE003A5CCF76B1090A86A3CBDE63F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8792CE6F2870398608D4B9B6F3838B50 /* Starscream.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3368E2738F48AC792978B575C3121915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BAD636757FD3E62CE736AFBB2450CE0 /* Pods-Newapp24.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Newapp24/Pods-Newapp24-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Newapp24/Pods-Newapp24.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F9B12B7238037575CF62111902F9124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC1BEFF3230EDCCF4018B98516AF29FB /* Pods-Newapp24.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Newapp24/Pods-Newapp24-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Newapp24/Pods-Newapp24.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		54E511466B8BDF57CDA738FDF703DE32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC6C55B2BAD34215044E7E73B99849FE /* CocoaAsyncSocket.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		73CA844FDA86468F703912DF4B5640E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5B475DAE739ABF32F887D9E226D2D9 /* CocoaMQTT.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaMQTT/CocoaMQTT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaMQTT/CocoaMQTT-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaMQTT/CocoaMQTT.modulemap";
+				PRODUCT_MODULE_NAME = CocoaMQTT;
+				PRODUCT_NAME = CocoaMQTT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7657B5C9226CA3A75E5B7A4758604165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4963A306B163B3F40E0F36685D0B0305 /* Pods-Newapp24-Newapp24UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Newapp24-Newapp24UITests/Pods-Newapp24-Newapp24UITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Newapp24-Newapp24UITests/Pods-Newapp24-Newapp24UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CAD7F13313277D451C985ABCD03FF9AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E8BD0C9FED70515EC21A408C3121EB /* Pods-Newapp24Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Newapp24Tests/Pods-Newapp24Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Newapp24Tests/Pods-Newapp24Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E6FFD1C283814EF9C9F3DD797E8B6001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41E6ACF651ABAED6FBAC0FCD91731800 /* Pods-Newapp24Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Newapp24Tests/Pods-Newapp24Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Newapp24Tests/Pods-Newapp24Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F7168B4AD564E7B88F537F3AC4A4337F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED83F28EC7A1D7FCB8606EE619A99366 /* Pods-Newapp24-Newapp24UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Newapp24-Newapp24UITests/Pods-Newapp24-Newapp24UITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Newapp24-Newapp24UITests/Pods-Newapp24-Newapp24UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA318758F113424D9577640A2424499E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3B1C82A6BE96C36C4E4BACEE0505681 /* CocoaMQTT.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaMQTT/CocoaMQTT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaMQTT/CocoaMQTT-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaMQTT/CocoaMQTT.modulemap";
+				PRODUCT_MODULE_NAME = CocoaMQTT;
+				PRODUCT_NAME = CocoaMQTT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FFDCCD20106C88DC2B565663F32DE4C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAA106954C95AC3D4960DB9748F13226 /* Starscream.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E6683B27AEB87792C201E16F8CABD22 /* Build configuration list for PBXNativeTarget "Pods-Newapp24" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3368E2738F48AC792978B575C3121915 /* Debug */,
+				3F9B12B7238037575CF62111902F9124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E6FE13E3BAA6ADBD084E39BD4C8BAC8 /* Build configuration list for PBXNativeTarget "CocoaMQTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73CA844FDA86468F703912DF4B5640E3 /* Debug */,
+				FA318758F113424D9577640A2424499E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */,
+				C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65B2BBD8991DD61ACE6737AADB85AB43 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E511466B8BDF57CDA738FDF703DE32 /* Debug */,
+				1CF32F31BF693D625D713BC4994DE2E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		707227B97B7A8593900F961D7F58E72F /* Build configuration list for PBXNativeTarget "Pods-Newapp24-Newapp24UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7657B5C9226CA3A75E5B7A4758604165 /* Debug */,
+				F7168B4AD564E7B88F537F3AC4A4337F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF8E1A559D60C8443312D8067778442 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDCCD20106C88DC2B565663F32DE4C0 /* Debug */,
+				2CDFE003A5CCF76B1090A86A3CBDE63F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F345272332AC51FDD2C7ADE0C709D215 /* Build configuration list for PBXNativeTarget "Pods-Newapp24Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6FFD1C283814EF9C9F3DD797E8B6001 /* Debug */,
+				CAD7F13313277D451C985ABCD03FF9AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
