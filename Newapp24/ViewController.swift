@@ -23,29 +23,16 @@ class ViewController: UIViewController,CocoaMQTTDelegate, SFSpeechRecognizerDele
     
     var stringtillyet = ""
     var command_mqtt = "?"
+    var old_cmd = ["",""]
     @IBOutlet var imageView: UIImageView!;
     
     func mqtt(_ mqtt: CocoaMQTT, didConnectAck ack: CocoaMQTTConnAck) {
         
         mqtt.subscribe("tag/pics")
-        if command_mqtt != "left" && command_mqtt != "right"
-        {
+        
         mqtt.publish("tag/networktest", withString: command_mqtt)
-        }
-        else
-        {
-            if command_mqtt == "left"
-            {mqtt.publish("tag/networktest",withString: "MoveTank -50 50")
-            Thread.sleep(forTimeInterval: 4.675)
-            mqtt.publish("tag/networktest",withString: "MoveTank 0 0")
-            }
-            if command_mqtt == "right"
-            {mqtt.publish("tag/networktest",withString: "MoveTank 50 -50")
-                Thread.sleep(forTimeInterval: 4.675)
-                mqtt.publish("tag/networktest",withString: "MoveTank 0 0")
-                
-            }
-        }
+        
+        
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didPublishMessage message: CocoaMQTTMessage, id: UInt16) {
@@ -60,7 +47,6 @@ class ViewController: UIViewController,CocoaMQTTDelegate, SFSpeechRecognizerDele
         print((message.string!));
         imageView.image = UIImage(named:message.string!)
 
-        
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didSubscribeTopics success: NSDictionary, failed: [String]) {
@@ -119,19 +105,23 @@ class ViewController: UIViewController,CocoaMQTTDelegate, SFSpeechRecognizerDele
             let clientID = "CocoaMQTT-" + String(ProcessInfo().processIdentifier)+"2"
             let websocket = CocoaMQTTWebSocket(uri: "/mqtt")
             
-            var mqtt = CocoaMQTT(clientID: clientID, host: "192.168.1.4", port: 1884, socket: websocket)
+            var mqtt = CocoaMQTT(clientID: clientID, host: "192.168.1.2", port: 1884, socket: websocket)
             mqtt.allowUntrustCACertificate = true
             mqtt.keepAlive = 60
             mqtt.delegate = self
-          
-            if command == ["turn","left"]
+            print(command)
+            if !self.old_cmd.elementsEqual(Array(command))
             {
-                self.command_mqtt = "left"
+            if command == ["rotate","left"]
+            {
+                self.command_mqtt = "MoveTankDegrees 0 90 720"
+                
                 mqtt.connect()
+                
             }
-            if command == ["turn","right"]
+            if command == ["rotate","right"]
             {
-                self.command_mqtt = "right"
+                self.command_mqtt = "MoveTankDegrees 90 0 720"
                 mqtt.connect()
             }
             if command == ["stop","stop"]
@@ -239,6 +229,8 @@ class ViewController: UIViewController,CocoaMQTTDelegate, SFSpeechRecognizerDele
                                 self.command_mqtt = "MoveTank -90 -90"
                     mqtt.connect()
                             }
+            }
+            self.old_cmd = Array(command)
         }
         
                // Update the text view with the results.
@@ -286,30 +278,30 @@ class ViewController: UIViewController,CocoaMQTTDelegate, SFSpeechRecognizerDele
         mqtt.delegate = self
     
   print(mqtt.connect())
-        SFSpeechRecognizer.requestAuthorization { authStatus in
-
-            // Divert to the app's main thread so that the UI
-            // can be updated.
-            OperationQueue.main.addOperation {
-                switch authStatus {
-                case .authorized:
-                    print("starting recording")
-                    try! self.startRecording()
-                    
-                case .denied:
-                    
-                    print("denie")
-                case .restricted:
-                   print("restricted")
-                    
-                case .notDetermined:
-                    print("have an egg")
-                    
-                default:
-                    print("default")
-                }
-            }
-        }
+//        SFSpeechRecognizer.requestAuthorization { authStatus in
+//
+//            // Divert to the app's main thread so that the UI
+//            // can be updated.
+//            OperationQueue.main.addOperation {
+//                switch authStatus {
+//                case .authorized:
+//                    print("starting recording")
+//                    try! self.startRecording()
+//
+//                case .denied:
+//
+//                    print("denied")
+//                case .restricted:
+//                   print("restricted")
+//
+//                case .notDetermined:
+//                    print("have an egg")
+//
+//                default:
+//                    print("default")
+//                }
+//            }
+//        }
         
 
          
