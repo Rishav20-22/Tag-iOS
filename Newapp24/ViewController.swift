@@ -10,16 +10,37 @@ import CocoaMQTT
 import Speech
 
 
-class ViewController: UIViewController,CocoaMQTTDelegate {
+class ViewController: UIViewController,CocoaMQTTDelegate,UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
     // speech recog variables decl
     //end
+    let data = ["Square", "Rectangle", "Triangle", "Circle"];
+
+    @IBOutlet weak var Text_x: UITextField!
+    
+    @IBOutlet weak var Text_y: UITextField!
+   
+
+    @IBOutlet weak var Pickerview: UIPickerView!
     @IBOutlet var label: UILabel!
     var command_mqtt = "?"
     var old_cmd = ["",""]
    // @IBOutlet var imageView: UIImageView!;
+    
+    //Draw_Shape Code
     @IBAction func changeBtnTapped(_ sender: Any) {
-        label.text = "Plot point";
-        command_mqtt = "plot"
+       
+        // Accesses the value on the Shape Picker(PickerView)
+        var num = Pickerview.selectedRow(inComponent: 0)
+       
+        var text_x: String = Text_x.text!
+        var text_y: String = Text_y.text!
+        label.text = "Draw "+data[num]+" "+text_x+" "+text_y
+        command_mqtt = data[num]+" "+text_x+" "+text_y
+        
         mqtt_connect()
        }
     @IBAction func changeBtnTapped2(_ sender: Any) {
@@ -32,7 +53,7 @@ class ViewController: UIViewController,CocoaMQTTDelegate {
          
         label.text = "Rotate Right";
         command_mqtt = "MoveTankDegrees -45 45 360"
-        //mqtt.connect()
+       
         mqtt_connect()
        }
     @IBAction func changeBtnTapped4(_ sender: Any) {
@@ -110,11 +131,32 @@ class ViewController: UIViewController,CocoaMQTTDelegate {
 
  }
 
+
+    func pickerView(_ pickerView: UIPickerView,
+    numberOfRowsInComponent component: Int) -> Int {
+
+        // Row count: rows equals array length.
+        return data.count
+}
+
+    func pickerView(_ pickerView: UIPickerView,
+    titleForRow row: Int,
+    forComponent component: Int) -> String? {
+
+        // Return a string from the array for this row.
+        return data[row]
+}
+    
     override func viewDidLoad() {
-        
+      
+
+        initializeHideKeyboard()
+
 
         super.viewDidLoad()
-    
+        
+        self.Pickerview.dataSource = self
+        self.Pickerview.delegate = self
         // Do any additional setup after loading the view.
         let clientID = "CocoaMQTT-" + String(ProcessInfo().processIdentifier)
         let websocket = CocoaMQTTWebSocket(uri: "/mqtt")
@@ -122,12 +164,30 @@ class ViewController: UIViewController,CocoaMQTTDelegate {
         mqtt.allowUntrustCACertificate = true
         mqtt.keepAlive = 60
         mqtt.delegate = self
-    
+        
         print(mqtt.connect())
 
         
     }
+    func initializeHideKeyboard(){
+    //Declare a Tap Gesture Recognizer which will trigger our dismissMyKeyboard() function
+    let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+    target: self,
+    action: #selector(dismissMyKeyboard))
+    //Add this tap gesture recognizer to the parent view
+    view.addGestureRecognizer(tap)
+    }
+    @objc func dismissMyKeyboard(){
+    //endEditing causes the view (or one of its embedded text fields) to resign the first responder status.
+    //In short- Dismiss the active keyboard.
+    view.endEditing(true)
+    }
+  
   
 }
+
+
+ 
+
 
 
